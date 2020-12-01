@@ -1,0 +1,147 @@
+.shortcuts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shortcut-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+}
+
+.shortcut-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin: 1rem;
+}
+
+.shortcut {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #eee;
+  transition: 0.2s background-color ease, 0.2s color ease;
+}
+
+.shortcut img {
+  width: 50%;
+  height: 50%;
+}
+
+a {
+  cursor: auto;
+  text-decoration: none;
+}
+
+.shortcut-name {
+  margin: 0.5rem 0;
+  color: black;
+  text-decoration: none;
+}
+
+.none {
+  user-select: none;
+  font-size: 1rem;
+  color: #555;
+}
+
+.shortcut:hover {
+  background-color: #dedede;
+  color: #666;
+}
+
+@media (min-width: 550px) {
+  .shortcut {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .shortcut-name {
+    font-size: 1rem;
+    margin: 0.65rem 0;
+  }
+}
+
+.shortcut-modal {
+  display: none;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.shortcut-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.shortcut-form input {
+  padding: 4px;
+  margin: 0.5rem 0;
+}
+
+#add {
+  cursor: pointer;
+  outline: none;
+  background-color: #eee;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.25rem 0;
+  font-family: "Fira Code", monospace;
+  transition: 0.2s background-color ease;
+}
+
+#add:hover {
+  background-color: #ddd;
+}
+
+.invalid {
+  display: none;
+  color: #dd0000;
+  font-size: 0.75rem;
+  margin: 8px 0 0;
+}
+
+@media (min-width: 800px) {
+  .shortcut-form {
+    padding: 1.25rem;
+    font-size: 1rem;
+    width: 200px;
+  }
+
+  .shortcut-form input {
+    margin: 0.6rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .shortcut-form {
+    padding: 1.35rem;
+    font-size: 1.35rem;
+    width: 225px;
+  }
+
+  .shortcut-form input {
+    margin: 0.65rem 0;
+  }
+
+  .invalid {
+    margin: 10px 0 0;
+    font-size: 0.9rem;
+  }
+}

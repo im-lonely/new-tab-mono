@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="shortcut.css" />
+    <script src="main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="text">
+      <h1 id="greeting"></h1>
+      <div id="search">
+        <form method="get" action="http://www.google.com/search?q=">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0 0 172 172"
+            style="fill: #000000"
+          >
+            <g
+              fill="none"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <path d="M0,172v-172h172v172z" fill="none"></path>
+              <g fill="#000000">
+                <path
+                  d="M72.24,10.32c-32.14837,0 -58.48,26.33163 -58.48,58.48c0,32.14837 26.33163,58.48 58.48,58.48c12.73243,0 24.51823,-4.17369 34.1514,-11.15985l45.26422,45.26422l9.72875,-9.72875l-44.85437,-44.85438c8.81266,-10.24624 14.19,-23.51814 14.19,-38.00125c0,-32.14837 -26.33163,-58.48 -58.48,-58.48zM72.24,17.2c28.39563,0 51.6,23.20437 51.6,51.6c0,28.39563 -23.20437,51.6 -51.6,51.6c-28.39563,0 -51.6,-23.20437 -51.6,-51.6c0,-28.39563 23.20437,-51.6 51.6,-51.6z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <input
+            class="search"
+            autocomplete="off"
+            name="q"
+            maxlength="255"
+            placeholder="Search..."
+          />
+        </form>
+      </div>
+      <h2 id="time"></h2>
+      <hr />
+      <div class="shortcuts">
+        <h2 class="shortcuts-title">shortcuts</h2>
+        <div class="shortcut-grid">
+          <div class="shortcut-container shortcut-add">
+            <div class="shortcut none"><span>＋</span></div>
+            <h4 class="shortcut-name">add one</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shortcut-modal">
+      <div class="shortcut-form">
+        <label for="name">Name</label>
+        <input name="name" maxlength="32" id="name" autocomplete="off" />
+        <label for="url">URL</label>
+        <input name="url" id="url" autocomplete="off" />
+        <button id="add">Add</button>
+        <p class="invalid">invalid</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "new tab mono",
+  "version": "1.0",
+  "description": "a simple minimalistic new tab extension",
+  "permissions": ["tabs", "history"],
+  "icons": {
+    "32": "icon.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "manifest_version": 2
+}
